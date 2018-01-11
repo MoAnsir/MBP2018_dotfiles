@@ -2,6 +2,11 @@
 
 # Install command-line tools using Homebrew.
 
+#Maybe this stuff should go here.... Im not sureno
+brew tap caskroom/cask
+brew install brew-cask
+brew tap caskroom/versions
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -92,6 +97,54 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+#Add in my stuff
+#brew cask install sublime-text3
+brew cask install iterm2
+#brew cask install virtualbox
+#brew cask install vagrant
+#brew cask install vagrant-manager
+brew cask install sourcetree
+#brew cask install google-chrome
+#brew cask install google-chrome-canary
+brew cask install google-drive
+brew cask install google-hangouts
+#brew cask install firefox
+brew cask install firefoxdeveloperedition
+brew cask install spectacle
+brew cask install kaleidoscope
+brew cask install vlc
+#brew cask install transmission
+brew cask install alfred
+brew cask install cheatsheet
+brew cask install android-file-transfer
+#brew cask install adobe-air
+brew cask install charles
+brew cask install slack
+brew install node
+brew install ffmpeg --with-libvpx
+brew install gpg #THen you need to run gpg --gen-key. This is also helpful gpg --list-key. Remember to fo git config --global user.name/.email/signingkey. For the last one you can take out the global and only set it for the Repo.
+
+#Also install zeplin
+
+brew link glib #Must do this before installing gimp
+brew install gimp
+
+#Node packages
+sudo npm install -g grunt-cli
+sudo npm install -g babel-cli
+sudo npm install -g bower
+sudo npm install -g csslint
+sudo npm install -g gulp
+sudo npm install -g jshint
+sudo npm install -g jsxhint
+sudo npm install -g webpack
+sudo npm install -g webpack-dev-server
+
+#Gem packages
+sudo gem install sass
+sudo gem install compass
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
